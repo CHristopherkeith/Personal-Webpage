@@ -1,0 +1,226 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial,Microsoft YaHei,SimHei,SimHei,sans-serif;
+}
+.navdef{
+	background: rgba(256,256,256,0.7);
+	font-size: 18px;
+}
+.navbar .navbar-brand:hover,.navbar li:hover{
+	background: rgba(122,122,122,.7);
+	transition: .5s;
+
+}
+.navbar .navbar-brand:hover,.navbar li a:hover{
+	color: rgba(255,255,255,1) !important;
+	transition: .5s;
+}
+#home,#about,#works,#contact{
+	background-position:center center;	
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.height-ctrl{
+	height: 100%;
+}
+#home{
+	background-image: url(images/home_bacg.jpg);
+	height: 850px;
+}
+#about{
+	background-image: url(images/about_bacg.jpg);
+	height: 1000px;
+}
+#works{
+	background-image: url(images/works_bacg.jpg);
+	height: 850px;
+}
+#contact{
+	background-image: url(images/contact_bacg.jpg);
+	height: 750px;
+}
+.overlay-1{
+	background: rgba(255,255,255,.1);
+	width: 100%;
+	height: 100%;
+}
+.intro-msg,.personal-detail,.works-album,.contact-message{
+	text-align: center;
+	height: 100%;
+}
+.intro-msg{
+	padding-top:20%;
+	padding-bottom: 20%;
+}
+.contact-message{
+	padding-top:150px;
+	padding-bottom: 228px;
+}
+.personal-detail,.works-album{
+	padding-top:7%;
+	padding-bottom: 7%;
+}
+
+.intro-msg li,.contact-message li{
+	padding: 10px;
+}
+.intro-msg h1{
+	font-size: 50px;
+	color: rgba(255,255,255,.85);
+	text-shadow: 5px 5px 8px rgba(0,0,0,1);
+}
+.intro-msg h3{
+	color:rgba(0,0,0,.7);
+	font-size: 30px;
+}
+
+
+.intro-msg a,.contact-message li a{
+	letter-spacing: 2px;
+	color: rgba(24,24,24,1);
+	text-shadow: 0px 0px 0px rgba(0,0,0,1);
+	background: rgba(255,255,255,0.5);
+}
+.btn:hover {
+  color: #fff;
+  border: 1px outset rgba(0, 0, 0, 0.5);
+  background: rgba(0,0,0, 0.5);
+  transform:scale(1.1);
+  transition: 0.5s;
+  text-shadow: 1px 1px 1px rgba(0,0,0, 20);
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+  letter-spacing: 2px;
+}
+.personal-detail h1{
+	font-size: 35px;
+	color: rgba(255,255,255,1);
+	text-shadow: 5px 5px 10px rgba(0,0,0,.5);
+}
+.personal-detail p{
+	font-size: 22px;
+	font-weight: bolder;
+	color: rgba(0,0,0,.8);
+	text-shadow: 2px 2px 5px rgba(255,255,255,.4);
+}
+.personal-detail h1:hover{
+	cursor: default;
+}
+
+
+.underlabel{
+	width: 100%;
+	height: 80px;
+	color: rgba(255,255,255,1);
+	background: rgba(0,0,0,.7);
+	position: relative;
+
+}
+
+.underlabel h3{
+	text-align: center;
+	position: absolute;
+	top: 0 ;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	font-size: 20px;
+	cursor: default;
+}
+.underlabel i{
+	font-size: 15px;
+}
+
+.works-album .row>div{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,1);
+}
+.works-album .row>div:hover{
+	z-index: 999;
+	transform: scale(1.1);
+	box-shadow: 0px 0px 20px rgba(255,255,255,1);
+	transition: .5s;
+}
+.contact-message,#contact{
+	position: relative;
+}
+.contact-message p{
+	color: rgba(255,255,255,.5);
+	text-shadow: 2px 2px 2px rgba(0,0,0,1);
+	font-size: 25px;
+	font-weight: bolder;
+	margin-bottom: 50px;
+	letter-spacing: 1px;
+}
+.contact-message p a,footer a{
+	color: inherit;
+}
+.contact-message p:hover{
+	color: rgba(255,255,255,.7);
+	transform:scale(1.05);
+  	transition: .3s;
+}
+footer a{
+	text-decoration: none !important;
+}
+footer a:hover,footer a:visited{
+	color: rgba(255,255,255,1);
+}
+#contact{
+	text-align: center;
+}
+footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin-bottom: 10px;
+	font-size: 15px;
+	color: rgba(255,255,255,.7);
+	text-shadow: 0px 0px 3px rgba(0,0,0,1)	
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 768px) {
+  .intro-msg li {
+    display: list-item;
+  }
+  .intro-msg h1{
+  	font-size: 40px;
+  }
+  .intro-msg h3{
+  	font-size: 25px;
+  }
+  .personal-detail h1 {
+    font-size: 30px;
+  }
+  .personal-detail p{
+  	font-size: 20px;
+  }
+  #about,#works{
+  	height: auto;
+  }
+  .works-album .row>div{
+  	margin-left: 16.667%;
+  }
+  .personal-detail,.works-album{
+		padding-top:20%;
+   }
+
+}
+
+@media (max-width: 480px){
+	.works-album .row>div{
+  		width: 90%;
+  		margin-left: auto;
+  		margin-right: auto;
+  		float: none;
+  	}
+  	.contact-message p{
+  		font-size: 20px;
+  		color: rgba(255,255,255,.7);
+  	} 
+}
